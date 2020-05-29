@@ -9,6 +9,7 @@ java -Xmx8G -jar picard.jar SortSam INPUT=/dev/stdin OUTPUT=clipped_test.bam SOR
 example of a primer file (please do not include the header!):
 
 chromosome  position  strand  primer-sequence
+
 chr1	115252238	0	GAGGTATCAATGTATGGAATCCCGTGCATCTTG
 
 The position should match the last basepair of the primer sequence at the border to the actual start of the captured DNA fragment. It is important to have the complete primer sequence, as the program determines the length to be clipped based on the length of the primer. If only the length of the primer but not its sequence is known, it is instead possible to just pass a dummy sequence of the correct length.
