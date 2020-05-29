@@ -1,8 +1,9 @@
 # PESC
 PESC is a small python script that can softclip the primers from paired sequencing data derived primer extension targeted sequencing.
 It takes SAM input from stdin and a primer file and sends the modified SAM records to stdout for further processing or storage.
+The tool requires python 2.7
 
-example: samtools view -h my_test.bam | primer_removal9_test.py CDHS-32375Z-340.primer3.txt | 
+example: samtools view -h my_test.bam | python primer_removal9_test.py CDHS-32375Z-340.primer3.txt | 
 java -Xmx8G -jar picard.jar SortSam INPUT=/dev/stdin OUTPUT=clipped_test.bam SORT_ORDER=coordinate; samtools index clipped_output.bam
 
 example of a primer file (please do not include the header!):
