@@ -8,6 +8,7 @@ java -Xmx8G -jar picard.jar SortSam INPUT=/dev/stdin OUTPUT=clipped_test.bam SOR
 
 example of a primer file (please do not include the header!):
 
+
 chromosome  position  strand  primer-sequence
 
 chr1	115252238	0	GAGGTATCAATGTATGGAATCCCGTGCATCTTG
